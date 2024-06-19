@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="da">
+<head> 
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+
+    <!-- Import af tekst typer -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/x-icon" href="assets/images/Favicon.png">
+    <title>Taiji og Qigong hos Mogens Lehmkuhl Hansen</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <navbar class="nav-bar">   
+            <ul>
+                <logo onclick="window.location.href='index.html'">  
+                    <img src="assets/images/Taiji-og-Qigong_logo_white.svg" alt="Taiji og Qigong logo" class="logo">
+                </logo>
+                <li><a href="træningsformen.html"> Træningsformen  </a></li>
+                <li><a href="underviser.html">Underviser</a></li>
+                <li><a href="qigong-undervisning.html">Qigong</a></li>
+                <li><a href="taiji-undervisning.html">Taiji</a></li>
+                <li><a href="index.html" class="nav-highlight">Hjem</a></li>
+            </ul>
+        </navbar>
+
+        <navbar class="nav-bar-mobile">
+            <logo onclick="window.location.href='index.html'">  
+                <img src="assets/images/Taiji-og-Qigong_logo_white.svg" alt="Taiji og Qigong logo" class="logo">
+            </logo>
+            <input type="checkbox" id="menu"class="burger-menu-action">  <!--Indsætter en checkboks, vi kan bruge til at skulle vores menu-->
+            <nav class="nav-bar-mobile-items">  
+                <ul>                
+                    <li><a href="index.html" class="nav-highlight">Hjem</a></li>
+                    <li><a href="taiji-undervisning.html">Taiji</a></li>
+                    <li><a href="qigong-undervisning.html">Qigong</a></li>
+                    <li><a href="underviser.html">Underviser</a></li>
+                    <li><a href="træningsformen.html"> Træningsformen  </a></li>
+                </ul>
+            </nav>
+            <label for="menu"> <!--laver et label for at samarbejde med vores checkboks. For leder efter et id med samme navn, for at starte samarbejdet-->
+                <span> <img src="assets/images/bars-solid-white.svg" alt="Burger menu" class="burger-menu-ikon"></span>
+            </label> 
+        </navbar> 
+</header>
+
+    <!-- Kopier hertil --> <!-- Kopier hertil --> <!-- Kopier hertil -->
+
+    <!-- Om sektion -->
+    <section class="grid-container" id="om-section">
+        <h1 id="om-overskrift">om</h1>
+        <div id="om-tekst">
+            <p>Taiji og Qigong er i familie med hinanden og bygger begge på kinesisk filosofi. Taiji kræver ud over undervisning også hjemmearbejde og øvelse, mens Qigong er mere ligetil: det handler om instruks og øvelser. Vi har alle sammen tanke og bevidsthed og der findes noget som hedder energi. I træningen er der fokus på at arbejde med tanker, bevidsthed og energi. </p>
+            <p>Undervisningen i Taiji og Qigong foregår med Mogens Lemkuhl Hansen, som har mange års erfaring indenfor træningsformen, og tidligere har undervist som landsholdstræner.</p>
+        </div>
+            <img src="assets/images/tajij-teng.png" alt="Kinesiske tegn for Taiji" id="om-billede">
+    </section>
+
+    <img src="assets/images/Opdeler.png" alt="Yin og Yang fra Logo" class= "opdeler">
+
+    <!-- Focus points -->
+    <section class="grid-container">
+        <div class="focus-points" id="taiji-undervisning">
+            <h2>taiji undervisning</h2>
+            <a href="taiji-undervisning.html">
+                <img src="assets/images/Taiji-undervising.png" alt="Tre personer udøver Taiji" class="button-border fp-mobile-size"> 
+            </a> 
+        </div> 
+        
+        <div class="focus-points" id="qigong-undervisning">
+            <h2>qigong undervisning</h2>
+            <a href="qigong-undervisning.html">
+                <img src="assets/images/Qigong-undervisning.png" alt="Gruppe af personer til undervisning" class="button-border fp-mobile-size">
+            </a>
+        </div>
+
+        <div class="focus-points"id="underviser">
+            <h2>underviser</h2>
+            <a href="underviser.html">
+                <img src="assets/images/Mogens-underviser.png" alt="Billede af Mogens der laver split op af en dørkarm" class="button-border fp-mobile-size">
+            </a>
+        </div>
+    </section>
+
+    <!-- Tilmelding -->
+    <section class="grid-container">
+        <h1 id="tilmelding-h1">tilmelding</h1>
+        <p id="tilmelding-p">Tilmeldingen foregår gennem et samarbejde med FOF Randers.<br> Træningen foregår ved FOF Randers på adressen J. V. Martins Pl. 1, 8900 Randers</p>
+        <a href="https://www.fof.dk/da/randers-favrskov-mariagerfjord/kurser/motion-og-traening/tai-chi-qigong" class="button" id="tilmelding-button">Tilmeld</a>
+    </section>
+
+    <img src="assets/images/Opdeler.png" alt="Yin og Yang fra Logo" class= "opdeler">
+
+    <!-- Workshop -->
+    <section class="grid-container" id="workshop">
+        <h1>Workshop</h1>
+            <div id="workshop-tekts">
+                <p>Mogens Lehmkuhl Hansen laver løbende kurser og workshops for: Private, virksomheder, institutioner, foreninger mm.</p>
+                <h3>Kan kontaktes på:</h3>
+            </div>
+            <img src="assets/images/envelope-solid-green.svg" alt="ikon af en kuvert" class="ikon" Id="workshop-kontakt-mail-ikon">   <!-- Ikon fra: fontawesome.com, 2023. Font Awesome Envelope Solid. [online] Available at: <https://fontawesome.com/icons/envelope?s=solid&f=classic> [Accessed 6 January 2023]. Redigeret grøn-->
+            <p class="kontakt-oplysninger" id="workshop-kontakt-mail">mogenslehmkuhl@gmail.com</p>
+            <img src="assets/images/phone-solid-green.svg" alt="ikon af en telefon" class="ikon" id="workshop-kontakt-tlf-ikon">      <!--Ikon fra: fontawesome.com, 2023. Font Awesome Phone Solid. [online] Available at: <https://fontawesome.com/icons/phone?s=solid&f=classic> [Accessed 6 January 2023].Redigeret grøn-->
+            <p class="kontakt-oplysninger" id="workshop-kontakt-tlf">30 69 69 42</p>
+
+            <div id="workshop-ikon-facebook">
+                <a href="https://www.facebook.com/people/Taiji-Mogens-Lehmkuhl-Hansen/100010457610910/?locale=da_DK">
+                    <img src="assets/images/facebook.svg" alt="facebook icon" class="ikon">
+                </a>
+            </div>
+
+            <!-- <p class="kontakt-oplysninger" id="facebook-tekst">Taiji Mogens Lehmkuhl Hansen</p> -->
+
+            <div id="workshop-ikon-instagram">
+                <a href=>
+                    <img src="assets/images/instagram.svg" alt="instagram icon" class="ikon">
+                </a>
+            </div>
+
+<!--             <p class="kontakt-oplysninger" id="instagram-tekst">(@InstagramHandle)</p> -->
+
+            <img src="assets/images/Workshop.jpg" alt="Billede af personer der sidder ned til et workshop" id="workshop-billede">
+    </section>
+
+<!--Footer-->
+    <footer class="grid-container footer-forside">
+            <img src="assets/images/Taiji-og-Qigong_logo_white.svg" alt="Taiji og Qigong logo" class="logo logo-footer" >
+
+            <h3 class="footer-kontakt">Kontakt</h3>
+            <img src="assets/images/envelope-solid-white.svg" alt="ikon af en kuvert" class="ikon footer-kontakt-mail-ikon"> <!-- Ikon fra: fontawesome.com, 2023. Font Awesome Envelope Solid. [online] Available at: <https://fontawesome.com/icons/envelope?s=solid&f=classic> [Accessed 6 January 2023]. Redigeret hvid-->
+            <p class="kontakt-oplysninger footer-kontakt-mail">mogenslehmkuhl@gmail.com</p>
+            <img src="assets/images/phone-solid-white.svg" alt="ikon af en telefon" class="ikon footer-kontakt-tlf-ikon"><!--Ikon fra: fontawesome.com, 2023. Font Awesome Phone Solid. [online] Available at: <https://fontawesome.com/icons/phone?s=solid&f=classic> [Accessed 6 January 2023]. Redigeret hvid-->
+            <p class="kontakt-oplysninger footer-kontakt-tlf">30 69 69 42</p>
+            <img src="" alt="">
+        
+            <div class="footer-kort-placering">
+                <a href="https://www.google.dk/maps/dir//FOF+Randers,+J.+V.+Martins+Plads,+Randers/@56.4633672,9.9800145,12z/data=!4m9!4m8!1m0!1m5!1m1!1s0x464c1cddd9eeea83:0xfe24cde374c0738!2m2!1d10.0500539!2d56.4633869!3e0">
+                    <img src="assets/images/Kort fof randers.JPG" alt="Gruppe af personer til undervisning" class="footer-kort">
+                </a>
+            </div>
+        
+            <h3 class="footer-adresse-h3">Adresse</h3>
+            <p class="footer-adresse-fof">FOF Randers</p>
+            <p class="footer-adresse-p">J. V. Martins Pl. 1, 8900 Randers</p>
+        
+
+            <img src="assets/images/copyright-solid-white.svg" alt="copyright" class="footer-copyright ikon"> <!--Ikon fra: fontawesome.com, 2023. Font Awesome Copyright Solid. [online] Available at: <https://fontawesome.com/icons/copyright?s=solid&f=classic> [Accessed 6 January 2023]. Redigeret hvid-->
+            <p class="footer-copyright-year">2023</p>
+    </footer>
+    
+</body>
+</html>

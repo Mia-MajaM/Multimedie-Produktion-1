@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="styles.css">
+
+    <!-- Import af tekst typer -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/x-icon" href="assets/images/Favicon.png">
+    <title>Taiji Undervisning</title>
+</head>
+<body>
+<!-- Navigation-->
+    <header>
+        <navbar class="nav-bar">   
+            <ul>
+                <logo onclick="window.location.href='index.html'">  
+                    <img src="assets/images/Taiji-og-Qigong_logo_white.svg" alt="Taiji og Qigong logo" class="logo">
+                </logo>
+                <li><a href="træningsformen.html"> Træningsformen  </a></li>
+                <li><a href="underviser.html">Underviser</a></li>
+                <li><a href="qigong-undervisning.html">Qigong</a></li>
+                <li><a href="taiji-undervisning.html" class="nav-highlight">Taiji</a></li>
+                <li><a href="index.html">Hjem</a></li>
+            </ul>
+        </navbar>
+
+        <navbar class="nav-bar-mobile">
+            <logo onclick="window.location.href='index.html'">  
+                <img src="assets/images/Taiji-og-Qigong_logo_white.svg" alt="Taiji og Qigong logo" class="logo">
+            </logo>
+            <input type="checkbox" id="menu"class="burger-menu-action">  <!--Indsætter en checkboks, vi kan bruge til at skulle vores menu-->
+            <nav class="nav-bar-mobile-items">  
+                <ul>                
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="taiji-undervisning.html"class="nav-highlight">Taiji</a></li>
+                    <li><a href="qigong-undervisning.html">Qigong</a></li>
+                    <li><a href="underviser.html">Underviser</a></li>
+                    <li><a href="træningsformen.html"> Træningsformen  </a></li>
+                </ul>
+            </nav>
+            <label for="menu"> <!--laver et label for at samarbejde med vores checkboks. For leder efter et id med samme navn, for at starte samarbejdet-->
+                <span> <img src="assets/images/bars-solid-white.svg" alt="Burger menu" class="burger-menu-ikon"></span>
+            </label> 
+        </navbar> 
+    </header>
+
+    <!-- Introduktion tekst Taiji-->
+    <section class="grid-container detajle-first-section" id="taiji-section">
+        <h1 id="taiji-overskrift">Taiji Undervisning</h1>
+        <div id="taiji-tekst-1">
+            <p> 
+                De fleste forbinder Taiji med film og tv fra Kina, hvor man ser grupper af gamle og unge kinesere bevæge sig i en flydende serie af stillinger, der langsomt glider over i hinanden.
+            </p>
+        
+            <p>
+                Taiji er et meget gammelt øvelsessystem til forbedring af både den fysiske og psykiske balance. Qi, som er begrebet for livskraft for kineserne, er det man forøger ved denne langsomme og blide træning. Taiji omfatter de bedste elementer fra en del forskellige gamle øvelser og har i mange århundreder været populær hos menigmand. Taiji formen består af et varierende antal bevægelser, der gradvist og meget omhyggeligt læres af eleven.
+            </p>
+        </div>
+        
+        <img src="assets/images/Taiji-undervising.png" alt="Underviser demonstrer taiji øvelse" id="taiji-billede">
+
+        <div id="taiji-tekst-2">
+            <p>
+                Hver bevægelse styrker og harmoniserer forskellige muskel- og ledgrupper. Ihærdig træning gør leddene mere smidige og ledbåndene mere elastiske. De langsomme blide bevægelser giver afslapning af musklerne i hele kroppen. Taiji kan med stort udbytte udøves af alle, uanset om man er kvinde eller mand, gammel eller ung.     
+            </p>
+
+            <p>
+                På grund af de langsomme og flydende bevægelser, kan man lave øvelserne sammen, selvom der er stor forskel på deltagernes styrke og kondition. Denne bevægelseskunst blev i flere hundrede år holdt hemmelig af nogle få familier og munkeordener. Kun begynder træningen blev almindeligt kendt, grunden hertil var, at taiji øvelserne i kombination med særlig træning i kampteknik skabte de bedste krigere og kung fu mestre.
+            </p>
+        </div>
+    </section>
+
+    <img src="assets/images/Opdeler.png" alt="Yin og Yang fra Logo" class= "opdeler">
+
+    <section class="grid-container white-box"> 
+        <h1 id="stilen-h1">stilen</h1>
+    
+        <img src="assets/images/Svaerd.png" alt="sværd som bruges til taiji" id="billede-sværd"> 
+        <div id="tekst-sværd">
+            <p>
+                Den taiji der undervises i af Mogens Lehmkuhl Hansen er Yang stilen. Den har sine historiske rødder fra Chen stilen, der kan spores tilbage til det 16 århundrede. Cheng Man-ch`ing`s 37 stillingers korte Yang form, udspringer fra Yang Cheng-fu`s 108 stillingers oprindelige form. 
+            </p>
+
+            <p> 
+                Udover håndformen undervises der også i våbenformer som; sabel, sværd og stok. Taiji koreografien, der fordeler energien til alle dele af kroppen. Derved øger du din livsenergi og styrker din koncentration og evne til at fokusere.</p>
+            </p>
+        </div>
+
+        <div id="detaljer-sværd">
+            <p>Træ Taiji sværd 90,5cm langt og skaftet 18cm. Klingen 69 cm og bredden 3,3cm.</p>
+        </div>
+        
+        <div id="detaljer-sværd-mobil">
+            <p>Træ Taiji sværd 90,5cm langt og skaftet 18cm. <br> Klingen 69 cm og bredden 3,3cm.</p>
+        </div>
+    </section>
+
+    <img src="assets/images/Opdeler.png" alt="Yin og Yang fra Logo" class= "opdeler" >
+    
+    <section class="grid-container hold-section">
+        <h1 id="hold-h1">Hold</h1>
+        
+        <div class="Hold-boks" id="Hold-boks1">
+            <img src="assets/images/Taiji-begynder.jpg" alt="kvinde der udøver Taiji" class="Hold-billede">
+                
+            <h4 class="Hold-overskrift">Begynder</h4>
+                
+            <p class="Hold-webtekst">
+                Dette hold består af op til 14 elever og er for personer, og er for alle - uanset køn og alder.
+                Taiji er en koreografi af sammenhængende, flydende bevægelser, der er gode for både krop og sind. 
+                Alle led og muskler bruges, og man træner både smidighed, styrke og balance - samtidig med at man afstresser sindet. Prisen inkluderer 14 gange
+                af 1 t. og 40minutters varighed.</p>
+            <p class="Hold-mobiltekst">
+                Taiji er en koreografi af sammenhængende, flydende bevægelser, der er gode for både krop og sind. Prisen inkluderer 14 gange af 1 t. og 40minutters varighed.
+            </p>
+            
+            <a href="https://www.fof.dk/da/randers-favrskov-mariagerfjord/kurser/motion-og-traening/tai-chi-qigong/tai-chi-begynder/310719" class="button Hold-tilmelding" >Tilmeld</a>
+
+            <p class="Hold-pris">DKK 1365,-</p>
+            <p class="Hold-sted">FOF Randers</p>
+
+        </div>
+
+
+
+        <div class="Hold-boks" id="Hold-boks2">
+            <img src="assets/images/Taiji-ovede.jpg" alt="Mand der udøver Taiji" class="Hold-billede">
+
+            <h4 class="Hold-overskrift">Øvede</h4>
+
+            <p class="Hold-webtekst">
+            Dette hold består af op til 14 elever og er for personer, der har gennemgået, begynder undervisning hos Mogens Lehmkuhl Hansen.
+            På det øvede hold forsætter vi med at udvidede vores kendskab til energi arbejdet, Qigong, De 5 løsneøvelser, Taiji Formen og et par øvelserne Tuishou. 
+            Prisen inkluderer 10 gange af 1½ times varighed.
+            </p>
+
+            <p class="Hold-mobiltekst">
+            På det øvede hold forsætter vi med at udvidede vores kendskab til energi arbejdet. Prisen inkluderer 14 gange af 1 t. og 40minutters varighed.  
+            </p>
+
+            <a href="https://www.fof.dk/da/randers-favrskov-mariagerfjord/kurser/motion-og-traening/tai-chi-qigong/tai-chi-vede/310720" class="button Hold-tilmelding">Tilmeld</a>
+                
+            <p class="Hold-pris">DKK 1365,-</p>
+            <p class="Hold-sted">FOF Randers</p>
+        </div>
+    </section>
+    
+    <footer class="grid-container footer">
+        <img src="assets/images/Taiji-og-Qigong_logo_white.svg" alt="Taiji og Qigong logo" class="logo logo-footer" >
+            <h3 class="footer-kontakt">Kontakt</h3>
+            <img src="assets/images/envelope-solid-white.svg" alt="ikon af en kuvert" class="ikon footer-kontakt-mail-ikon"> <!-- Ikon fra: fontawesome.com, 2023. Font Awesome Envelope Solid. [online] Available at: <https://fontawesome.com/icons/envelope?s=solid&f=classic> [Accessed 6 January 2023]. Redigeret hvid-->
+            <p class="kontakt-oplysninger footer-kontakt-mail">mogenslehmkuhl@gmail.com</p>
+            <img src="assets/images/phone-solid-white.svg" alt="ikon af en telefon" class="ikon footer-kontakt-tlf-ikon"><!--Ikon fra: fontawesome.com, 2023. Font Awesome Phone Solid. [online] Available at: <https://fontawesome.com/icons/phone?s=solid&f=classic> [Accessed 6 January 2023]. Redigeret hvid-->
+            <p class="kontakt-oplysninger footer-kontakt-tlf">30 69 69 42</p>
+
+            <div class="footer-kort-placering">
+                <a href="https://www.google.dk/maps/dir//FOF+Randers,+J.+V.+Martins+Plads,+Randers/@56.4633672,9.9800145,12z/data=!4m9!4m8!1m0!1m5!1m1!1s0x464c1cddd9eeea83:0xfe24cde374c0738!2m2!1d10.0500539!2d56.4633869!3e0">
+                    <img src="assets/images/Kort fof randers.JPG" alt="Gruppe af personer til undervisning" class="footer-kort">
+                </a>
+            </div>
+
+            <h3 class="footer-adresse-h3">Adresse</h3>
+            <p class="footer-adresse-p">J. V. Martins Pl. 1, 8900 Randers</p>
+            <p class="footer-adresse-fof">FOF Randers</p>
+
+            <img src="assets/images/copyright-solid-white.svg" alt="copyright" class="footer-copyright ikon"> <!--Ikon fra: fontawesome.com, 2023. Font Awesome Copyright Solid. [online] Available at: <https://fontawesome.com/icons/copyright?s=solid&f=classic> [Accessed 6 January 2023]. Redigeret hvid-->
+            <p class="footer-copyright-year">2023</p>
+    </footer>
+</body>

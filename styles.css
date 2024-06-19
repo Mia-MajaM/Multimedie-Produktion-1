@@ -1,0 +1,1590 @@
+/* Import af tekst typer */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    margin:0;
+    padding:0;
+    background-color: #E3E0DB;
+}
+
+/* Styling af skrifttyper */
+h1, h2, h3, h4, h5{
+    font-family: 'Montserrat', sans-serif;
+    color: #019A81;
+    text-transform: uppercase;
+    margin: 15px 0px 15px 0px;
+    padding: 0;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h1{
+    font-size: 18px;
+}
+
+h2{
+    font-size: 16px;
+}
+
+h3{
+    font-size: 14px;
+    text-align: left;
+}
+
+h4{
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: none;
+}
+
+h5{
+    font-size: 12px;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* Navigation */ /* Navigation */ /* Navigation */ /* Navigation */
+.nav-bar{
+    padding:0;
+    margin:0;
+}
+
+.nav-bar-mobile{
+    display: none;
+}
+
+.logo{      
+    height: 60px;
+    Width: 150px;
+}
+
+.nav-bar > ul{
+    list-style-type: none;
+    background-color: #343434;
+    margin:0;
+    padding-left: 60px;
+    padding-right: 25px;
+}
+
+.nav-bar > ul> li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase; 
+    text-align: center;    
+    float: right;      /*Sætter nav elementerne helt til højre. Listen er omvendt i HTML, for at Træningsformen er helt til højre*/
+    display: block;     /*Sætter hver li i en boks*/
+    margin: 22px 0px 22px 0px;  /*margin brugt over og under for at få muliged for at lave en streg mellem nav elementerne, som er på højde med teksten*/
+    padding: 0px 35px 0px 35px; /*padding brugt til at lave afstand mellem nav elementerne*/
+    border-right: 1px #ffffff solid; /*laver stregen, til højre for nav elementerne*/
+}
+
+.nav-bar > ul > li> a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-bar > ul > li:first-of-type {  /*first-of-type snakker til den første element af denne type*/
+    border-right:none;              /*Fjerner stregen ved det første element - træningsformer*/
+}
+
+.nav-bar > ul > li> .nav-highlight{           /*Highligter nav-elementet for den side man befinder sig på*/     
+    color: #019A81;
+    font-weight: bold;
+}
+
+/*Navigation mobil*/
+@media screen and (max-width:391px) {
+    .nav-bar{
+        display: none;
+    }
+
+    .nav-bar-mobile{
+        display: block;
+        background-color: #343434;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .logo{      
+        height: 40px;
+        Width: 100px;
+        margin: 0;
+        /* float: left; */
+        padding: 10px;
+    }
+
+    .burger-menu-ikon{
+        height: 40px;
+        width: 40px;
+        float: right;
+        padding: 10px;
+    }
+
+    .nav-bar-mobile-items{
+        position: absolute;
+        display: none;
+        overflow: auto;
+        top: 100%;
+        right: 0;
+        background-color:#343434;
+        padding: 10px;
+        border-radius: 0px 0px 0px 30px;
+    }
+
+    .nav-bar-mobile-items > ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .nav-bar-mobile-items > ul >li{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase; 
+        margin-bottom: 15px;
+    }
+    .nav-bar-mobile-items > ul > li> .nav-highlight{           /*Highligter nav-elementet for den side man befinder sig på*/     
+        color: #019A81;
+    }
+
+    .nav-bar-mobile-items >ul >li > a{
+        color: white;
+        text-decoration: none;
+    }
+    
+
+    .burger-menu-action:checked ~ nav{  /*Siger at når vores class burger-menu-action er checked skal nav vises*/
+        display: block;
+    }
+
+    .burger-menu-action{
+        display: none;
+    }
+}
+
+/* Definering af Grids */
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+/* Styling af opdeler billede. Stammer fra Logoet */
+.opdeler{
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 50px;
+    height: 50px;
+    grid-column: 6/ span 2;
+    padding: 80px 0px 80px 0px; 
+}
+
+/*Styling af opdeler mobil*/
+@media screen and (max-width:391px){
+    .opdeler{
+        grid-column: 1/ span 12;
+        padding: 40px 0px 40px 0px; 
+    }
+}
+
+/* Styling af knap. */
+.button{
+    background-color: #019A81;
+    color:#ffffff;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;   
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 0px 20px 0px 20px;
+}
+
+.button-border, .button{     /*.button-border er kun til billeder, mens .button er til knapper*/
+    border: 2.5px solid transparent;
+    border-radius: 75px;
+    border-color: #71f3e7;
+}
+
+.button-border:hover, .button:hover{
+    border-color: #fe6e6b;
+}
+
+/*Styling af kontaktoplysninger*/
+.ikon{
+    height: 25px;
+    width: 25px;
+    padding-top: 10px;
+}
+.kontakt-oplysninger{
+    padding: 12px 0px 0px 40px;
+    margin:0;
+}
+
+/*Styling af kontaktoplysninger mobil*/
+@media screen and (max-width:391px) {
+    .ikon{
+        height: 15px;
+        width: 15px;
+    }
+    .kontakt-oplysninger{
+        padding: 7px 0px 0px 30px;
+    }
+}
+
+.detajle-first-section{
+    background-image: url(assets/images/header-detalje.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+@media screen and (max-width:391px) {
+    .detajle-first-section{
+        background-size: 140%;
+    }
+}
+
+/*Footer*/ /*Footer*/ /*Footer*/ /*Footer*/ /*Footer*/
+.footer-forside{
+    display: grid;
+    grid-template-rows: 200px 110px 25px 50px 50px 50px 25px 25px;
+    background-image: url(assets/images/footer-detalje-forside.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 600px;   
+    color:white;
+}
+
+.footer{
+    grid-template-rows: 550px 110px 25px 50px 50px 50px 25px 50px;
+    background-image: url(assets/images/footer-detalje.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 900px;   
+    color:white;
+}
+
+.logo-footer{
+    grid-row: 2;
+    grid-column: 6 /span 2;
+    display: grid;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.footer-kontakt{
+    grid-column: 3/span 2;
+    grid-row: 4;
+}
+.footer-kontakt-mail-ikon{
+    grid-column: 3/span 2;
+    grid-row: 5; 
+}
+.footer-kontakt-mail{
+    grid-column: 3/span 2;
+    grid-row: 5;
+}
+.footer-kontakt-tlf-ikon{
+    grid-column: 3/span 2;
+    grid-row: 6;
+}
+.footer-kontakt-tlf{
+    grid-column: 3/span 2;
+    grid-row: 6;
+}
+
+.footer-kort-placering{
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    grid-column: 5 /span 4;
+    grid-row: 3/span 4;
+}
+.footer-kort{
+    height: 200px;
+    width: 400px;
+}
+
+.footer-kort:hover{
+    border: 2.5px solid transparent;
+    border-color: #fe6e6b;
+}
+
+.footer-adresse-h3{
+    grid-column: 9/ span 2;
+    grid-row: 4;
+}
+.footer-adresse-p{
+    grid-column: 9/ span 2;
+    grid-row: 5;
+}
+.footer-adresse-fof{
+    grid-column: 9/ span 2;
+    grid-row: 6;
+}
+
+.footer-copyright{
+    grid-column: 6;
+    grid-row: 8;
+    padding-left: 70%;
+}
+.footer-copyright-year{
+    grid-column: 7;
+    grid-row: 8;
+}
+@media screen and (max-width:391px) {    
+        .footer-forside{
+            grid-template-rows: 35px 50px 25px 25px 25px 25px 25px;
+            background-size: 100%;
+            height: 250px;
+        }
+        
+        .footer{
+            grid-template-rows: 150px 50px 25px 25px 25px 25px 25px;
+            height: 100%;   
+        }
+
+        .footer-forside > p{
+            font-size: 10px;
+        }
+        
+        
+        .logo-footer{
+            grid-row: 2;
+            grid-column: 1 /span 12;
+        }
+        
+        .footer-kontakt{
+            grid-column: 1/span 2;
+            grid-row: 3;
+            font-size: 12px;
+            padding-left:20px;
+        }
+        .footer-kontakt-mail-ikon{
+            grid-column: 1;
+            grid-row: 4; 
+            padding-left:10px;
+        }
+        
+        .footer-kontakt-mail{
+            grid-column: 1/span 6;
+            grid-row: 4;
+            
+        }
+        .footer-kontakt-tlf-ikon{
+            grid-column: 1;
+            grid-row: 5;
+            padding-left:10px;
+        }
+        .footer-kontakt-tlf{
+            grid-column: 1/span 5;
+            grid-row: 5;
+        }
+        
+        .footer-kort-placering{
+            display: block;
+            margin-left: auto;
+            margin-right:auto;
+            grid-column: 8 /span 3;
+            grid-row: 4/span 4;
+        }
+        .footer-kort{
+            height: 75px;
+            width: 150px;
+        }
+        
+        .footer-adresse-h3{
+            grid-column: 1/ span 5;
+            grid-row: 6;
+            font-size: 12px;
+            padding-left:20px;
+        }
+        .footer-adresse-fof{
+            grid-column: 1/ span 5;
+            grid-row: 7;
+            padding-left:10px;
+        }
+    
+        .footer-adresse-p{
+            grid-column: 1/ span 6;
+            grid-row: 8;
+            padding-left:10px;
+        }
+        
+        .footer-copyright{
+            grid-column: 9;
+            grid-row: 7;
+            padding-left: 0;
+        }
+        .footer-copyright-year{
+            grid-column: 10;
+            grid-row: 7;
+        }
+    }
+/*Fælles CSS slutter*//*Fælles CSS slutter*//*Fælles CSS slutter*/
+
+
+/*Hjem*/ /*Hjem*/ /*Hjem*/ /*Hjem*/ /*Hjem*/
+
+/* Om Sektion */
+#om-section{
+    grid-template-rows: 450px;
+    background-image: url(assets/images/forside-billede.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#om-overskrift{
+    padding: 0px;
+    margin: 0px;
+    grid-column: 6/span 2;
+    grid-row:2;
+    text-align: center;
+}
+
+#om-tekst{
+    grid-column: 5/ span 4;
+    grid-row: 3;
+}
+
+#om-billede{
+    height: 150px;
+    padding-top: 25px;
+    grid-column: 10/span 2;
+    grid-row: 3;
+}
+
+@media screen and (max-width:391px){
+    #om-section{
+        grid-template-rows: 225px 20px 150px 120px;
+        background-size: 110%;
+    }
+
+    #om-section{
+        background-image: url(assets/images/forside-billede.png);
+        background-repeat: no-repeat;
+    }
+    
+    #om-overskrift{
+        margin: 0px;
+        grid-column: 1/span 12;
+        grid-row:2;
+        text-align: center;
+    }
+    
+    #om-tekst{
+        grid-column: 2/ span 10;
+        grid-row: 3 span 2;
+    }
+    
+    #om-billede{
+        display: none;
+    }
+}
+
+/* Focus points */
+.focus-points{
+    justify-content: center;
+    text-align: center;
+}
+#taiji-undervisning{
+    grid-column: 2/span 3;
+}
+
+#qigong-undervisning{
+    grid-column: 5 /span 4;
+}
+
+#underviser{
+    grid-column:9 /span 3;
+}
+
+@media screen and (max-width:391px){
+    .fp-mobile-size{
+        height: 75%;
+    }
+    #taiji-undervisning{
+        grid-column: 1/span 12;
+        grid-row:1;
+    }
+    
+    #qigong-undervisning{
+        grid-column: 1/span 12;
+        grid-row: 2;
+    }
+    
+    #underviser{
+        grid-column: 1/span 12;
+        grid-row:3;
+    }
+}
+
+/* Tilmelding */
+#tilmelding-h1{
+    grid-column: 5/span 4;
+    grid-row: 1;
+    margin-top: 100px;
+}
+
+#tilmelding-p{
+    grid-column: 4 /span 6;
+    text-align: center;
+    padding-bottom: 25px;
+    grid-row:2;
+}
+
+#tilmelding-button{
+    grid-column: 6 /span 2;
+    grid-row:3;
+}
+
+@media screen and (max-width:391px){
+    #tilmelding-h1{
+        grid-column: 1/span 12;
+        margin-top: 25px;
+    }
+    
+    #tilmelding-p{
+        grid-column: 1 /span 12;
+        padding: 0px 15px 10px 15px;
+    }
+    
+    #tilmelding-button{
+        grid-column: 5 /span 4;
+        width: 100px;
+        margin: 0;
+    }
+
+}
+
+/* Workshop */
+#workshop{
+    background-color: #ffffff;
+    padding-bottom: 50px;
+
+}
+
+#workshop > h1{
+    grid-column: 5/ span 4;
+    grid-row: 1;
+    padding-top: 25px;
+}
+
+#workshop-tekts{
+    grid-column: 2 / span 4;
+    grid-row: 2;
+}
+
+#workshop-billede{
+    grid-column: 8 / span 6;
+    grid-row: 2/ span 4;
+    width:100%;
+    height: 330px;
+    border-radius: 30px 0px 0px 30px;
+}
+
+#workshop-kontakt-mail-ikon{
+    grid-column: 2;
+    grid-row: 3;  
+}
+#workshop-kontakt-mail{
+    grid-column: 2/span 4;
+    grid-row: 3;
+}
+#workshop-kontakt-tlf-ikon{
+    grid-column: 2;
+    grid-row: 4;
+}
+#workshop-kontakt-tlf{
+    grid-column: 2/span 4;
+    grid-row: 4;
+}
+
+#workshop-ikon-facebook{
+    grid-column: 2;
+    grid-row: 5;
+}
+
+
+#workshop-ikon-instagram{
+    grid-column: 3;
+    grid-row: 5;
+}
+
+
+@media screen and (max-width:391px) {  
+    #workshop{
+        padding-bottom: 25px;
+    }
+    
+    #workshop > h1{
+        grid-column: 1/ span 12;
+        padding-top: 0px;
+        margin: 20px;
+    }
+    
+    #workshop-tekts{
+        grid-column: 2 / span 10;
+        grid-row: 3;
+    }
+    
+    #workshop-billede{
+        grid-column: 2 / span 10;
+        grid-row: 2;
+        height: 150px;
+        border-radius: 30px 30px 30px 30px;
+    }
+    
+    #workshop-kontakt-mail-ikon{
+        grid-column: 2;
+        grid-row: 4;  
+    }
+    #workshop-kontakt-mail{
+        grid-column: 2/span 4;
+        grid-row: 4;
+    }
+    #workshop-kontakt-tlf-ikon{
+        grid-column: 2;
+        grid-row: 5;
+    }
+    #workshop-kontakt-tlf{
+        grid-column: 2/span 4;
+        grid-row: 5;
+    }
+
+     #workshop-ikon-facebook{
+        grid-column: 2;
+        grid-row: 6;
+    }
+    
+    #workshop-ikon-instagram{
+        grid-column: 3;
+        grid-row: 6;
+    }
+
+}
+
+/*Taiji Undervisning*/
+
+/* Introduktion tekst Taiji  */
+#taiji-section{
+    grid-template-rows: 300px;
+}
+
+#taiji-overskrift{
+    grid-column: 6/ span 2;
+    grid-row: 2;
+}
+
+#taiji-tekst-1 {
+    grid-column: 5/ span 4;
+    grid-row: 3;
+}
+
+#taiji-billede {
+    width: 95%;
+    grid-column: 5/ span 4;
+    grid-row: 4;
+    padding: 10px 0px 10px 0px;
+}
+
+#taiji-tekst-2 {
+    grid-column: 5/ span 4;
+    grid-row: 5;
+}
+
+/* Til telefon */
+@media only screen and (max-width:391px){
+    #taiji-section{
+        grid-template-rows: 175px;
+    }
+    
+    #taiji-overskrift{
+        grid-column: 2/ span 10;
+    }
+    
+    #taiji-tekst-1 {
+        grid-column: 2/ span 10;
+    }
+    
+    #taiji-billede {
+        width: 100%;
+        grid-column: 2/ span 10;
+    }
+    
+    #taiji-tekst-2 {
+        grid-column: 2/ span 10;
+    }
+}
+
+/* Stilen*/
+.white-box {
+    background-color: #ffffff;
+    grid-column: 1/ span 12; 
+}
+
+#stilen-h1{
+    grid-column: 5/ span 4;
+    grid-row: 1;
+}
+
+#billede-sværd{
+    width: 98%;
+    grid-column: 2/ span 5;
+    grid-row: 2/ span 3;
+}
+
+#detaljer-sværd{  
+    grid-column: 2/ span 4;
+    grid-row: 5/ span 1;
+}
+
+#detaljer-sværd-mobil{
+    display: none;
+}
+
+#tekst-sværd{
+    grid-column: 7/ span 5;
+    grid-row: 2/ span 4;
+    margin: 0px;
+    padding-left: 10px;
+}
+
+/* Til telefon */
+@media only screen and (max-width:391px){
+
+    #billede-sværd{
+        width: 100%;
+        grid-column: 2/ span 10;
+        grid-row: 3/ span 1;
+    }
+    #detaljer-sværd-mobil{
+        display: block;
+        grid-column: 2/ span 10;
+        grid-row: 4/ span 1;
+        margin-bottom: 20px;
+    }
+
+    #detaljer-sværd{  
+        display: none;
+    }
+
+    #tekst-sværd{
+        grid-column: 2/ span 10;
+        grid-row: 2/ span 1;
+        padding-left: 0px;
+        margin-bottom: 10px;
+    }
+
+}
+
+/* Hold 1, Hold 2, Hold 3 her */
+.hold-h1{
+    margin-top: 0px;
+    margin-bottom: 70px;
+}
+
+#hold-h1{
+    grid-column: 5/span 4;
+    grid-row: 1;
+}
+
+.Hold-boks{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 50px 200px 40px 50px;
+    
+    /* styling  */
+    background-color: white;
+    margin: 10%;
+    border: 2.5px solid transparent;
+    border-radius: 30px;
+    border-color: #019a81;
+}
+#Hold-boks1{
+    grid-column: 3/ span 4;
+}
+#Hold-boks2{
+    grid-column: 7/ span 4;
+}
+#Hold-boks3{
+    grid-column: 5/ span 4;
+}
+
+.Hold-billede{
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    width: 100%;
+    border-radius: 27px 27px 0px 0px;
+}
+
+.Hold-overskrift{
+    grid-column: 1 / span 2;
+    grid-row: 2; 
+    margin-top: 20px;
+    text-align: center;
+}
+
+.Hold-webtekst{
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    margin: 10px 40px 20px 40px;
+}
+.Hold-mobiltekst{
+    grid-column: 1 / span 2;
+    display: none;
+}
+
+.Hold-pris{
+    grid-column: 1;
+    grid-row: 5;
+    text-align: left;
+    margin-left: 25px;
+}
+
+.Hold-sted{
+    grid-column: 2;
+    grid-row: 5;
+    text-align: right;
+    margin-right: 25px;
+}
+
+/* Tilmeld */
+.Hold-tilmelding{
+    grid-column: 1 / span 2;
+    grid-row: 4;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.hold-section{
+    height: 450px;
+}
+
+
+/* Til telefon */
+@media only screen and (max-width:391px){
+    .Hold-boks{
+        grid-template-rows: 80px 50px 150px 20px 30px 35px 20px;
+        margin: 5%;
+    }
+    #Hold-boks1{
+        grid-column: 1/ span 6;
+    }
+    #Hold-boks2{
+        grid-column: 7/ span 6;
+    }
+    #Hold-boks3{
+        grid-column: 4/ span 6;
+    }
+    .Hold-overskrift{
+        margin-top: 15px; 
+    }
+    .Hold-webtekst{
+        display: none;
+    }
+    .Hold-mobiltekst{
+        margin: 5px;
+        text-align: center;
+        display: block;
+    }
+    .button-hold{
+        padding: 5px;
+    }
+    .Hold-pris{
+        grid-row: 4;
+        grid-column: 1/ span 2;
+        margin: 2px;
+        text-align: center;
+    }
+    .Hold-sted{
+        grid-row: 5;
+        grid-column: 1/ span 2;
+        margin: 2px;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    .Hold-tilmelding{
+        margin-left: 10%;
+        margin-right: 10%;
+        grid-row: 6;
+    }
+}
+
+
+/*Qigong-Undervisning*/ /*Qigong-Undervisning*/ /*Qigong-Undervisning*/ /*Qigong-Undervisning*/ /*Qigong-Undervisning*/
+    
+    /* Introduktion/tekst her  */
+    #Qigong-section{
+        grid-template-rows: 300px;
+    }
+
+    #Qigong-overskrift{
+        grid-column: 6/span 2;
+        grid-row:2;
+        text-align: center;
+    }
+    
+    #Qigong-tekst{
+        grid-column: 5/ span 4;
+        grid-row: 3;
+        padding-bottom: 50px;
+    }
+    
+    /* Billede */
+    #Qigong-billede{
+        grid-row: 4;
+        grid-column: 1 / span 12;
+        width: 100%;
+    }
+    
+    /* Til telefon */
+    @media only screen and (max-width:391px){
+        #Qigong-section{
+            grid-template-rows: 175px;
+        }
+
+        #Qigong-tekst{
+            grid-column: 2/ span 10;
+            grid-row: 3;
+        }
+    } 
+    
+
+/*Underviser*/ /*Underviser*/ /*Underviser*/ /*Underviser*/
+
+/*Om Mogens*/
+#om-underviser{
+    grid-template-rows: 350px;
+}
+
+#om-underviser > h1{
+    grid-row: 2;
+    grid-column: 4 /span 6;
+}
+
+#om-underviser-tekst{
+    grid-row: 3/span 4;
+    grid-column: 2/span 5;
+    padding-left: 175px;
+    margin: 0;   /*Fjerner margin fra p*/
+}
+
+#om-underviser-billede{
+    grid-row: 3;
+    grid-column: 8/span 5;
+}
+
+#om-underviser > h2{
+    grid-row: 4;
+    grid-column: 8;
+    text-align: left;
+}
+
+#om-underviser-ikon-mail{
+    grid-row: 5;
+    grid-column: 8;
+}
+
+
+#om-underviser-mail{
+    grid-row: 5;
+    grid-column: 8/span 2;
+}
+
+#om-underviser-ikon-tlf{
+    grid-row: 6;
+    grid-column: 8;
+}
+
+#om-underviser-tlf{
+    grid-row: 6;
+    grid-column: 8/span 2;
+    margin: 0;
+}
+
+#om-underviser-ikon-facebook{
+    grid-row: 4;
+    grid-column: 9;
+    padding-left: 150px;
+
+}
+
+#om-underviser-ikon-instagram{
+    grid-row: 4;
+    grid-column: 10;
+    padding-left: 40px;
+}
+
+
+
+@media screen and (max-width:391px){
+    #om-underviser{
+        grid-template-rows: 175px;
+    }
+    
+    #om-underviser > h1{
+        grid-row: 2;
+        grid-column: 2 /span 10;
+    }
+    
+    #om-underviser-tekst{
+        grid-row: 3;
+        grid-column: 2/span 10;
+        padding-left: 0px;
+        padding-bottom: 10px;
+    }
+    
+    #om-underviser-billede{
+        height: 150px;
+        grid-row: 4;
+        grid-column: 3/span 8;
+        display: block;
+        margin-left: auto;
+        margin-right:auto;
+
+    }
+    
+    #om-underviser > h2{
+        grid-row: 5;
+        grid-column: 4/span 2;
+    }
+    
+    #om-underviser-ikon-mail{
+        grid-row: 6;
+        grid-column: 4;
+    }
+    
+    #om-underviser-mail{
+        grid-row: 6;
+        grid-column: 4/span 4;
+    }
+    
+    #om-underviser-ikon-tlf{
+        grid-row: 7;
+        grid-column: 4;
+    }
+    
+    #om-underviser-tlf{
+        grid-row: 7;
+        grid-column: 4/span 4;
+        margin: 0;
+    }
+    #om-underviser-ikon-facebook{
+        grid-row: 5;
+        grid-column: 9;
+        padding: 0px;
+        margin-top: 5px;
+    
+    }
+    
+    #om-underviser-ikon-instagram{
+        grid-row: 5;
+        grid-column: 10;
+        margin-top: 5px;
+        padding: 0px;
+    }
+    
+    
+    #om-underviser-opdeler{
+        grid-row: 8;
+    }
+}
+
+/*Tidslinje*/
+.grid-container-tidslinje{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 3px 1fr 1fr 1fr 1fr 1fr 1fr; /*Modificere grid template til 13 kolonner, for at kunne lave en tidslinjestreg i midten på 3px*/
+    }
+
+#underviser-tidslinje{
+    background-color: #ffffff;
+}
+
+#underviser-tidslinje > h1{
+    grid-column: 6/span 3;
+    grid-row: 1;
+    padding-top:15px;
+}
+
+.tidslinje-streg, #tidslinje-streg-sidste{
+    position: relative;  /*relative for at kunne lave en prik*/
+    background-color: #95B79F;
+    grid-column: 7;
+}
+#tidslinje-streg-sidste{
+    height: 15px;
+}
+
+.tidslinje-punkt{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    width:15px;
+    height:15px;
+    background-color: #95B79F;
+    border-radius: 50%;
+}
+
+.tidslinje-dato-højre, .tidslinje-dato-venstre{
+    margin: 0;
+}
+
+.tidslinje-dato-højre{
+    grid-column: 8;
+}
+
+.tidslinje-dato-venstre{
+    grid-column:6;
+}
+
+.tidslinje-tekst-højre, .tidslinje-tekst-venstre{
+    padding-bottom: 30px;
+    margin:0;
+}
+
+.tidslinje-tekst-højre{
+    grid-column: 9/span 4;
+}
+
+.tidslinje-tekst-venstre{
+    grid-column: 2/span 4;  
+}
+
+.tidslinje-nu{
+    grid-row: 2;
+}
+.tidslinje-2008{
+    grid-row: 3;
+}
+.tidslinje-2007-først{
+    grid-row: 4;
+}
+.tidslinje-2007-anden{
+    grid-row: 5;
+}
+.tidslinje-1998{
+    grid-row: 6;
+}
+.tidslinje-1996{
+    grid-row: 7;
+}
+.tidslinje-1985{
+    grid-row: 8;
+}
+.tidslinje-1973-først{
+    grid-row: 9;
+}
+.tidslinje-1973-anden{
+    grid-row: 10;
+}
+
+@media screen and (max-width:391px){
+    .grid-container-tidslinje{
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /*Modificere grid template til 13 kolonner, for at kunne lave en tidslinjestreg i midten på 3px*/
+    }
+
+#underviser-tidslinje > h1{
+    grid-column: 2/span 11;
+}
+
+.tidslinje-streg, #tidslinje-streg-sidste{
+    grid-column: 2;
+}
+
+.tidslinje-dato-højre, .tidslinje-dato-venstre{
+    grid-column: 4;
+    padding-right: 10px;
+}
+
+.tidslinje-tekst-højre, .tidslinje-tekst-venstre{
+    grid-column: 5/span 8;
+}
+}
+
+/*Mentor sektion*/
+.mentor-knap{
+    border-radius: 100px;
+    width: 300px;
+    height: 100px;
+}
+.mentor-knap > a{
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    padding-top: 40px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.mentor-billeder{
+    border-radius: 50%;
+    height: 100px;
+    float:left;
+}
+
+#mentor-sektion{
+    height: 100px;
+}
+
+#mentor-sektion-h1{
+    grid-column: 6/span 2;
+    grid-row: 2;
+}
+
+#mentor-opdeler{
+    grid-row: 1;
+}
+
+#mentor-wee{
+    grid-column: 4 /span 4;
+    grid-row: 3;
+   }
+
+#mentor-torben{
+    grid-column: 7 /span 4;
+    grid-row: 3;
+   }
+
+   @media screen and (max-width:391px){
+    .mentor-knap{
+        border-radius: 100px;
+        width: 200px;
+        height: 45px;
+    }
+    .mentor-knap > a{
+        font-size: 12px;
+        padding-top: 15px;
+    }
+
+    .mentor-billeder{
+        height: 50px;
+    }
+    
+    #mentor-sektion{
+        height: 300px;
+        grid-template-rows: 1fr 75px 100px 100px;
+    }
+    
+    #mentor-sektion-h1{
+        grid-column: 2/span 10;
+    }
+    
+    #mentor-wee{
+        grid-column: 3 /span 8;
+        grid-row: 3;
+       }
+    
+    #mentor-torben{
+        grid-column: 3 /span 8;
+        grid-row: 4;
+       }
+    }
+
+
+    #video-section{
+        height: 0px;
+    }
+    
+    
+    #img-hige{
+        height:0px;
+    }
+    
+    
+    #metoder-section{
+        grid-template-rows: 600px 1fr 400px;
+    }
+    
+    #detaligie-størglse{
+        width: 1519px;
+        height: 875px;
+    }
+    
+    #video-moens {
+        position: static;
+        min-width: 100%; 
+        min-height: 100%;
+    }
+    
+    
+    
+    #metoder-tekts{
+        grid-row: 2; 
+    }
+    
+    #metoder-tekts > p{
+        margin-top: 25px;
+    }
+    
+    #placering-0{
+        padding: 0px 0px 0px 720px;
+    }
+    
+    #placering-1{
+        position: absolute;
+        padding: 20px 0px 0px 800px;
+    }
+     #placering-2{
+        position: absolute;
+        padding: 20px 0px 0px 500px;
+        
+    }
+    #placering-3{
+        position: absolute;
+        padding: 100px 0px 0px 800px;
+    }
+    #placering-4{
+        position: absolute;
+        padding: 100px 0px 0px 500px;
+    }
+    #placering-5{
+        position: absolute;
+        padding: 175px 0px 0px 800px;
+        text-align: center;
+    }
+    #placering-5-mobil{
+        display: none;
+    }
+ 
+    #placering-6{
+        position: absolute;
+        padding: 175px 0px 0px 500px;
+    }
+    #placering-7{
+        position: absolute;
+        padding: 275px 0px 0px 800px;
+    }
+    #placering-8{
+        position: absolute;
+        padding: 275px 0px 0px 500px;
+    } 
+    #placering-8-mobil{
+        display: none;
+    }
+    
+    #from-section{
+        grid-template-rows: 1fr 100px 1fr 1fr 1fr 1fr;
+        height: 1100px;
+    }
+    
+
+    #overskraft-form{
+        display: block;
+        margin-left: auto;
+        margin-right:auto;
+        grid-column: 5/ span 4;
+        grid-row: 2;
+        text-align: center;
+    }
+
+    .cirkle{
+        width: 75px;
+        height: 75px;
+        position: absolute;
+        z-index: 2;
+        border: 2.5px solid transparent;
+        border-radius: 50%;
+        border-color: #95B79F;
+        background-color: white;
+    }
+    #cirkle-1{
+        margin: 120px 0px 0px 455px;
+    }
+
+    #cirkle-2{
+        margin: 50px 0px 0px 455px;
+    }
+
+    #cirkle-3{
+        margin: 55px 0px 0px 455px;
+    }
+
+    #cirkle-4{
+        margin: 90px 0px 0px 455px;
+    }
+    
+    .cirkle-nummer{
+        padding: 25px 0px 0px 0px;
+        margin: 0px;
+    }
+
+    .form{
+        border-radius: 30px;
+        background-color: white;
+    }
+    
+    .tekts-padding{
+        padding-left: 20px;
+    }
+    
+    #form-1{
+        grid-row: 3;
+        grid-column: 5/span 4;
+    }
+    #form-2{
+        margin-top: 50px;
+        grid-row: 4;
+        grid-column: 5/span 4;
+    }
+    #form-3{
+        margin-top: 50px;
+        grid-row: 5;
+        grid-column: 5/span 4;
+    }
+    #form-4{
+        margin-top: 50px;
+        grid-row: 6;
+        grid-column: 5/span 4;
+    }
+    
+    
+    
+    
+    @media only screen and (max-width:391px){
+        #metoder-section{
+            grid-template-rows: 200px 1fr 400px;
+        }
+
+        #video-section{
+            height: 60px;
+            padding-top: 50px;
+        
+        }
+        
+        #video-moens {
+            position: static;
+            max-width: 100%; 
+            min-height: 100%;
+        }
+        
+        #metoder-tekts > p{
+            margin-top: 25px;
+        }
+        
+        #placering-0{
+            padding: 0px 0px 0px 145px;
+        }
+        
+        #placering-1{
+            position: absolute;
+            padding: 20px 0px 0px 200px;
+        }
+         #placering-2{
+            position: absolute;
+            padding: 20px 0px 0px 5px;
+            
+        }
+        #placering-3{
+            position: absolute;
+            padding: 100px 0px 0px 200px;
+        }
+        #placering-4{
+            position: absolute;
+            padding: 100px 0px 0px 5px;
+        }
+        #placering-5{
+            display: none;
+        }
+
+        #placering-5-mobil{
+            display: block;
+            position: absolute;
+            padding: 175px 0px 0px 200px;
+        }
+
+        #placering-6{
+            position: absolute;
+            padding: 175px 0px 0px 5px;
+        }
+        #placering-7{
+            position: absolute;
+            padding: 275px 0px 0px 200px;
+        }
+        #placering-8{
+            display: none;
+        } 
+        #placering-8-mobil{
+            display: block;
+            position: absolute;
+            z-index: 2;
+            padding: 275px 0px 0px 5px;
+        }
+
+        #from-section{
+            grid-template-rows: 1fr 100px 1fr 1fr 1fr 1fr;
+            height: 1500px;
+        }
+
+        #overskraft-form{
+            grid-column: 2/ span 10;
+            grid-row: 2;
+        }
+
+        #form-1{
+            grid-row: 3;
+            grid-column: 3/span 8;
+        }
+        #form-2{
+            margin-top: 50px;
+            grid-row: 4;
+            grid-column: 3/span 8;
+        }
+        #form-3{
+            margin-top: 50px;
+            grid-row: 5;
+            grid-column: 3/span 8;
+        }
+        #form-4{
+            margin-top: 50px;
+            grid-row: 6;
+            grid-column: 3/span 8;
+        }
+        
+        #detaligie-størglse{
+        display: none;
+        }
+
+        .cirkle{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            z-index: 2;
+            border: 2.5px solid transparent;
+            border-radius: 50%;
+            border-color: #95B79F;
+            background-color: white;
+        }
+
+        #cirkle-1{
+            margin: 130px 0px 0px 245px;
+        }
+    
+        #cirkle-2{
+            margin: 100px 0px 0px 245px;
+        }
+    
+        #cirkle-3{
+            margin: 87px 0px 0px 245px;
+        }
+    
+        #cirkle-4{
+            margin: 130px 0px 0px 245px;
+        }
+        
+        .cirkle-nummer{
+            padding: 15px 0px 0px 0px;
+        }
+    
+    }
+
+

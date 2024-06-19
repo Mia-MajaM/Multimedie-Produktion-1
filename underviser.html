@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="styles.css">
+
+    <!-- Import af tekst typer -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/x-icon" href="assets/images/Favicon.png">
+    <title>Mogens Lehmkuhl Hansen</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <navbar class="nav-bar">   
+            <ul>
+                <logo onclick="window.location.href='index.html'">  
+                    <img src="assets/images/Taiji-og-Qigong_logo_white.svg" alt="Taiji og Qigong logo" class="logo">
+                </logo>
+                <li><a href="træningsformen.html"> Træningsformen  </a></li>
+                <li><a href="underviser.html" class="nav-highlight">Underviser</a></li>
+                <li><a href="qigong-undervisning.html">Qigong</a></li>
+                <li><a href="taiji-undervisning.html">Taiji</a></li>
+                <li><a href="index.html">Hjem</a></li>
+            </ul>
+        </navbar>
+
+        <navbar class="nav-bar-mobile">
+            <logo onclick="window.location.href='index.html'">  
+                <img src="assets/images/Taiji-og-Qigong_logo_white.svg" alt="Taiji og Qigong logo" class="logo">
+            </logo>
+            <input type="checkbox" id="menu"class="burger-menu-action">  <!--Indsætter en checkboks, vi kan bruge til at skulle vores menu-->
+            <nav class="nav-bar-mobile-items">  
+                <ul>                
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="taiji-undervisning.html">Taiji</a></li>
+                    <li><a href="qigong-undervisning.html">Qigong</a></li>
+                    <li><a href="underviser.html" class="nav-highlight">Underviser</a></li>
+                    <li><a href="træningsformen.html"> Træningsformen  </a></li>
+                </ul>
+            </nav>
+            <label for="menu"> <!--laver et label for at samarbejde med vores checkboks. For leder efter et id med samme navn, for at starte samarbejdet-->
+                <span> <img src="assets/images/bars-solid-white.svg" alt="Burger menu" class="burger-menu-ikon"></span>
+            </label> 
+        </navbar> 
+</header>
+
+<!--Om Mogens-->
+    <section class="grid-container detajle-first-section" id="om-underviser">
+        <h1>mogens lehmkuhl hansen</h1>
+        <div id="om-underviser-tekst">
+            <p> Mogens (født 1955) er pensionist, og han er stadig meget aktiv og arbejder med hans hobby og passion. Mogens er uddannet afspændingspædagog og har arbejdet professionelt med det i mange år. Uddannelsen hedder nu psykomotorisk terapeut, men den dækker stadig over det samme. Hans baggrund er én af årsagerne til, at det er så meningsfuldt for ham at undervise i Taiji og Qigong. 
+            </p>
+            <p>
+                Det, han tilbyder gennem undervisningen, giver eleverne indsigt i krop, sind, det sociale og det spirituelle. Han har selv rigtig meget uddannelse i Taiji og Qigong, og er i færd med at videreuddanne mig lige nu i ”De tre principper”, der bygger oven på Taiji og Qigong. Han er et engageret menneske og meget passioneret i forhold til det, der for ham er en livsfilosofi: at opnå en sund balance og at fokusere på det, der giver mening i livet for den enkelte. Det er også det, jeg gerne vil give videre til og lære mine elever.
+            </p>
+        </div>
+
+        <img src="assets/images/Mogens-underviser.png" alt="Billede af Mogens der laver split op af en dørkarm" id="om-underviser-billede">
+        <h2>Kontakt</h2>
+        <img src="assets/images/envelope-solid-green.svg" alt="ikon af en kuvert" class="ikon" id="om-underviser-ikon-mail">
+        <p class="kontakt-oplysninger" id="om-underviser-mail">mogenslehmkuhl@gmail.com</p>
+        <img src="assets/images/phone-solid-green.svg" alt="ikon af en telefon" class="ikon" id="om-underviser-ikon-tlf">
+        <p class= "kontakt-oplysninger" id="om-underviser-tlf">30 69 69 42</p>
+        
+        <div id="om-underviser-ikon-facebook">
+            <a href="https://www.facebook.com/people/Taiji-Mogens-Lehmkuhl-Hansen/100010457610910/?locale=da_DK">
+                <img src="assets/images/facebook.svg" alt="facebook icon" class="ikon">
+            </a>
+        </div>
+
+        <div id="om-underviser-ikon-instagram">
+            <a href=>
+                <img src="assets/images/instagram.svg" alt="instagram icon" class="ikon">
+            </a>
+        </div>
+            
+        
+    </section>
+
+    <img src="assets/images/Opdeler.png" alt="Yin og Yang fra Logo" class= "opdeler">
+
+<!--Tidslinje-->
+    <section class= "grid-container-tidslinje" id="underviser-tidslinje">
+        <h1>erfaring</h1>
+        <div class="tidslinje-streg">
+            <div class="tidslinje-punkt"></div>
+        </div>
+        <h5 class="tidslinje-dato-højre tidslinje-nu">Nu</h5>
+        <p class="tidslinje-tekst-højre tidslinje-nu">Mogens Lehmkuhl Hansen har undervist i Frederikshavn, Aalborg, Viborg, Århus og Tinglev. Han underviser nu den korte Yang stil, i Randers.</p>
+        
+        <div class="tidslinje-streg">
+            <div class="tidslinje-punkt"></div>
+        </div>
+        <h5 class="tidslinje-dato-venstre tidslinje-2008">2008</h5>
+        <p class="tidslinje-tekst-venstre tidslinje-2008">Torben Bremann arrangerer workshops med Peter Ralstone, som Mogens også har været aktiv deltager i siden 2008.</p>
+        
+        <div class="tidslinje-streg">
+            <div class="tidslinje-punkt"></div>
+        </div>
+        <h5 class="tidslinje-dato-højre tidslinje-2007-først">2007</h5>
+        <p class="tidslinje-tekst-højre tidslinje-2007-først">I 2007 begyndte Mogens at følge Master Sam Tam`s workshops i København. Sideløbende med dette, modtager han privat undervisning af Sam Tam´s bedste elev i Danmark, Torben Bremann.</p>
+        
+        <div class="tidslinje-streg">
+            <div class="tidslinje-punkt"></div>
+        </div>
+        <h5 class="tidslinje-dato-venstre tidslinje-2007-anden">2007</h5>
+        <p class="tidslinje-tekst-venstre tidslinje-2007-anden">Han blev Certificeret instruktør i Marster Huang Sheng-Shyan Yang Taijiquan tradition i marts 2007 fra School of Central Equilibrium hos Wee Kee Jin.</p>
+        
+        <div class="tidslinje-streg">
+            <div class="tidslinje-punkt"></div>
+        </div>
+        <h5 class="tidslinje-dato-højre tidslinje-1998">1998</h5>
+        <p class="tidslinje-tekst-højre tidslinje-1998">Mogens har siden foråret 1998 modtaget undervisning af Wee Kee Jin, der lige som Patrick Kelly er elev af Master Huang Sheng-Shyan. </p>
+        
+        <div class="tidslinje-streg">
+            <div class="tidslinje-punkt"></div>
+        </div>
+        <h5 class="tidslinje-dato-venstre tidslinje-1996">1996</h5>
+        <p class="tidslinje-tekst-venstre tidslinje-1996">I 1996 startede Mogens hos en af Patrick Kelly´s elever Irene Engelbrecht, for senere selv at deltage i Patricks workshops i Danmark.</p>
+
+        <div class="tidslinje-streg">
+            <div class="tidslinje-punkt"></div>
+        </div>
+        <h5 class="tidslinje-dato-højre tidslinje-1985">1985</h5>
+        <p class="tidslinje-tekst-højre tidslinje-1985">I 1985 begyndte han at dyrke Taiji hos Bodil Andreasen i Århus. Da Master Kai-Ying Tung kom til Danmark, begyndte Mogens at træne Tung`s Yang form. </p>
+        
+        <div class="tidslinje-streg">
+            <div class="tidslinje-punkt"></div>
+        </div>
+        <h5 class="tidslinje-dato-venstre tidslinje-1973-først">1973</h5>
+        <p class="tidslinje-tekst-venstre tidslinje-1973-først">Han trænede og underviste fra 1973 til 1991 hvor han har vundet flere mesterskaber, og var landsholdstræner.</p>
+
+        <div id="tidslinje-streg-sidste">
+            <div class="tidslinje-punkt"></div>
+        </div>
+        <h5 class="tidslinje-dato-højre tidslinje-1973-anden">1973</h5>
+        <p class="tidslinje-tekst-højre tidslinje-1973-anden">Mogens Lehmkuhl Hansen startede i 1973 med karate, hvor han opnåede 3. dan sortbælte.</p>
+    </section> 
+
+    <img src="assets/images/Opdeler.png" alt="Yin og Yang fra Logo" class= "opdeler">
+
+<!--Mentor sektion-->
+    <section class="grid-container" id="mentor-sektion">
+        <h1 Id="mentor-sektion-h1">Mentor</h1>
+
+        <div class="button mentor-knap" id="mentor-wee">
+            <img src="assets/images/Mentor-Wee-Kee-Jin.png" alt="Billede af Wee Kee Jin" class="mentor-billeder">
+            <a href="https://www.taijiquan-school-of-central-equilibrium.com/principal-instructor/" id="mentor-wee-navn">Wee Kee-Jin</a>
+        </div>
+
+        <div class="button mentor-knap" id="mentor-torben">
+            <img src="assets/images/Mentor-Torben-Bremann.png" alt="Billede af Torben Bremann" class="mentor-billeder">
+            <a href="https://taichiogqigong.dk" id="mentor-wee-navn">Torben Bremann</a>
+        </div>
+    </section>
+
+<!--Footer-->
+    <footer class="grid-container footer">
+        <img src="assets/images/Taiji-og-Qigong_logo_white.svg" alt="Taiji og Qigong logo" class="logo logo-footer" >
+            <h3 class="footer-kontakt">Kontakt</h3>
+            <img src="assets/images/envelope-solid-white.svg" alt="ikon af en kuvert" class="ikon footer-kontakt-mail-ikon"> <!-- Ikon fra: fontawesome.com, 2023. Font Awesome Envelope Solid. [online] Available at: <https://fontawesome.com/icons/envelope?s=solid&f=classic> [Accessed 6 January 2023]. Redigeret hvid-->
+            <p class="kontakt-oplysninger footer-kontakt-mail">mogenslehmkuhl@gmail.com</p>
+            <img src="assets/images/phone-solid-white.svg" alt="ikon af en telefon" class="ikon footer-kontakt-tlf-ikon"><!--Ikon fra: fontawesome.com, 2023. Font Awesome Phone Solid. [online] Available at: <https://fontawesome.com/icons/phone?s=solid&f=classic> [Accessed 6 January 2023]. Redigeret hvid-->
+            <p class="kontakt-oplysninger footer-kontakt-tlf">30 69 69 42</p>
+
+            <div class="footer-kort-placering">
+                <a href="https://www.google.dk/maps/dir//FOF+Randers,+J.+V.+Martins+Plads,+Randers/@56.4633672,9.9800145,12z/data=!4m9!4m8!1m0!1m5!1m1!1s0x464c1cddd9eeea83:0xfe24cde374c0738!2m2!1d10.0500539!2d56.4633869!3e0">
+                    <img src="assets/images/Kort fof randers.JPG" alt="Gruppe af personer til undervisning" class="footer-kort">
+                </a>
+            </div>
+
+            <h3 class="footer-adresse-h3">Adresse</h3>
+            <p class="footer-adresse-p">J. V. Martins Pl. 1, 8900 Randers</p>
+            <p class="footer-adresse-fof">FOF Randers</p>
+
+            <img src="assets/images/copyright-solid-white.svg" alt="copyright" class="footer-copyright ikon"> <!--Ikon fra: fontawesome.com, 2023. Font Awesome Copyright Solid. [online] Available at: <https://fontawesome.com/icons/copyright?s=solid&f=classic> [Accessed 6 January 2023]. Redigeret hvid-->
+            <p class="footer-copyright-year">2023</p>
+    </footer>
+
+</body>
+</html>
